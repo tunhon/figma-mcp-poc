@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "@playwright/test"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext"
+  },
+  "include": [
+    "qa/**/*.ts",
+    "playwright.config.ts"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "figma-mcp-poc",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "qa:demo": "playwright test",
+    "qa:summary": "node ./scripts/generate-demo-summary.mjs",
+    "qa:demo:customer": "npm run qa:demo && npm run qa:summary",
+    "qa:figma:freshness": "node ./scripts/check-figma-contract-freshness.mjs",
+    "qa:test": "playwright test --grep-invert @figma",
+    "qa:test:headed": "playwright test --headed --grep-invert @figma",
+    "qa:test:update-snapshots": "playwright test --update-snapshots --grep-invert @figma",
+    "qa:test:figma": "playwright test --grep @figma",
+    "qa:test:figma:latest": "npm run qa:figma:freshness && npm run qa:test:figma",
+    "qa:report:open": "playwright show-report"
+  },
+  "private": true,
+  "packageManager": "npm@11.11.0",
+  "dependencies": {
+    "@angular/common": "^21.2.0",
+    "@angular/compiler": "^21.2.0",
+    "@angular/core": "^21.2.0",
+    "@angular/forms": "^21.2.0",
+    "@angular/platform-browser": "^21.2.0",
+    "@angular/router": "^21.2.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.2.5",
+    "@angular/cli": "^21.2.5",
+    "@angular/compiler-cli": "^21.2.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^25.5.0",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.2"
+  }
+}

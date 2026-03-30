@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "syncedAt": "2026-03-31T02:23:56.8234664+07:00",
+    "syncMethod": "figma-mcp-manual-sync",
+    "maxRecommendedAgeMinutes": 120
+  },
+  "source": {
+    "provider": "figma-mcp",
+    "fileKey": "LHQnSXlTNe3UVoZJqGcxeu",
+    "type": "make",
+    "sourcePath": "src/app/App.tsx"
+  },
+  "page": {
+    "backgroundColor": "rgb(245, 247, 250)",
+    "width": 1440,
+    "height": 1024
+  },
+  "card": {
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "16px",
+    "width": 360,
+    "height": 0
+  },
+  "text": {
+    "title": "Welcome back",
+    "subtitle": "Sign in to continue",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "button": "Sign in",
+    "helper": "Demo POC for Figma-driven UI testing"
+  },
+  "input": {
+    "borderColor": "rgb(208, 215, 222)",
+    "borderRadius": "8px"
+  },
+  "button": {
+    "backgroundColor": "rgb(37, 99, 235)",
+    "textColor": "rgb(255, 255, 255)",
+    "borderRadius": "8px"
+  }
+}
